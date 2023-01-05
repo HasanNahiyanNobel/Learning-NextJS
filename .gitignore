@@ -1,2 +1,8 @@
 # Jetbrains configuration files
 .idea/
+
+# Node modules
+learning-phase-2/node_modules
+
+# NextJS files
+learning-phase-2/.next
