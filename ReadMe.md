@@ -1,3 +1,3 @@
 # Learning Next.js
 
-Following the [official learning doc](https://nextjs.org/learn/basics/create-nextjs-app) of Vercel.
+Following the [official learning doc](https://nextjs.org/learn/foundations/about-nextjs) of Vercel.
