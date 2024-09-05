@@ -1,5 +1,10 @@
 <html lang="en">
 
+<head>
+  <link rel="stylesheet" href="main.css">
+  <title>Index</title>
+</head>
+
 <body>
 
 <!-- Working Div -->
@@ -10,9 +15,40 @@
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/jsx">
-  const app = document.getElementById('app');
+  function Header(props) {
+    return <h1>{props.title}</h1>;
+  }
+
+  function HomePage() {
+    function handleClick() {
+      setLikes(likes + 5);
+    }
+
+    const [likes, setLikes] = React.useState(63);
+    const names = [`John Lennon`, `Paul McCartney`, `George Harrison`, `Ringo Starr`];
+
+    return (
+        <div>
+          <Header title="Develop. Preview. Ship."/>
+
+          <ul>
+            {
+              names.map(name => (
+                  <li key={name}>{name}</li>
+              ))
+            }
+          </ul>
+
+          <button onClick={handleClick}>Like</button>
+
+          <h2>Total number of likes: {likes}</h2>
+        </div>
+    );
+  }
+
+  const app = document.getElementById(`app`);
   const root = ReactDOM.createRoot(app);
-  root.render(<h1>Develop. Preview. Ship.</h1>);
+  root.render(<HomePage/>);
 </script>
 
 </body>
