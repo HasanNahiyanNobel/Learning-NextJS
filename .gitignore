@@ -1,2 +1,5 @@
-# Jetbrains configuration files
-.idea/
+# Node Modules
+node_modules/
+
+# Next.js Files
+.next/
