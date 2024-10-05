@@ -1,4 +1,4 @@
-import { sql } from '@vercel/postgres';
+import {sql} from '@vercel/postgres';
 import {
   CustomerField,
   CustomersTableType,
@@ -7,7 +7,7 @@ import {
   LatestInvoiceRaw,
   Revenue,
 } from './definitions';
-import { formatCurrency } from './utils';
+import {formatCurrency} from './utils';
 
 export async function fetchRevenue() {
   try {
@@ -84,6 +84,7 @@ export async function fetchCardData() {
 }
 
 const ITEMS_PER_PAGE = 6;
+
 export async function fetchFilteredInvoices(
   query: string,
   currentPage: number,
