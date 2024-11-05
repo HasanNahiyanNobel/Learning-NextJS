@@ -1,3 +1,10 @@
+import {Newsreader} from 'next/font/google';
+
+const newsreader = Newsreader({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 export const metadata = {
   title: `The Playground`,
   description: `Nobel’s playground for learning Next.js`,
@@ -17,7 +24,7 @@ export default function RootLayout({children}) {
             crossOrigin="anonymous"
         />
       </head>
-      <body>
+      <body className={newsreader.className}>
       {children}
       <script async={true}
               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
