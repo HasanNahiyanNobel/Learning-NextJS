@@ -1,0 +1,5 @@
+// Override Bootstrap variables before importing its SCSS
+$dark: #202020; // Example: change primary color
+
+// Import Bootstrap’s SCSS files
+@import 'bootstrap/scss/bootstrap';

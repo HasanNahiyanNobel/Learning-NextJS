@@ -1,4 +1,5 @@
 import {Newsreader} from 'next/font/google';
+import './custom-bootstrap.scss';
 
 const newsreader = Newsreader({
   subsets: ['latin'],
@@ -24,7 +25,7 @@ export default function RootLayout({children}) {
             crossOrigin="anonymous"
         />
       </head>
-      <body className={newsreader.className}>
+      <body className={newsreader.className + ` bg-dark text-light`}>
       {children}
       <script async={true}
               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
