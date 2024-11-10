@@ -25,7 +25,7 @@ export default function RootLayout({children}) {
             crossOrigin="anonymous"
         />
       </head>
-      <body className={newsreader.className + ` bg-dark text-light`}>
+      <body className={newsreader.className} data-bs-theme="dark">
       {children}
       <script async={true}
               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
